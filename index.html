@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/events.js" defer></script> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+
+    <title>Tienda de Tennis</title>
+</head>
+
+<body>
+    <header class="site-header">    
+        <div class="site-header__container">
+            <section class="site-header__menu">           
+                <button class="site-header__menu-button"><img src="/Media/HomeScreen/Icons/Header/menu.svg" alt="Menu"></button>
+
+                <div class="menu" aria-hidden="true">
+                    <button class="menu__close" aria-label="Cerrar menú">✕</button>
+                    <nav class="menu__nav">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#" class="menu__nav-cart">Mi Carrito</a></li>
+                            <li>                             
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Tiendas
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul><a href="adidas.html">Adidas</a></ul>
+                                            <ul><a href="converse.html">Converse</a></ul>
+                                            <ul><a href="nike.html">Nike</a></ul>
+                                            <ul><a href="timberland.html">Timberland</a></ul>
+                                            <ul><a href="vans.html">Vans</a></ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>          
+
+            <section class="site-header__logo">
+                <a  class="site-header__logo-icon" href="index.html">
+                    <img class="site-header__logo-img" src="/Media/HomeScreen/Icons/Header/logo.svg" alt="Logo">
+                </a>
+            </section>
+            
+            <section class="site-header__cart">
+                <button class="site-header__cart-button">
+                    <span class="site-header__cart-badge">10</span> 
+                    <img src="/Media/HomeScreen/Icons/Header/cart.svg" alt="Carrito">                
+                </button>            
+            </section>
+            
+        </div>       
+    </header>
+
+    <section class="banner" id="homeBanner">
+        <h2 class="banner__title">
+            Productos Nuevos
+        </h2>
+
+        <p class="banner__text">
+            Conoce nuestros productos nuevos
+        </p>
+    </section>
+
+    <section class="storeBrands">
+
+        <h2 class="storeBrands__title">Nuestras Tiendas</h2>
+
+        <div class="storeBrands__icons">
+
+            <div class="storeBrands__icons-container">
+                <a href="adidas.html">
+                <img src="/Media/Brands/Adidas/adidas-logo.svg" alt="adidas-logo">
+                </a>
+            </div>
+            
+            <div class="storeBrands__icons-container">
+                <a href="converse.html">
+                    <img class="storeBrands__icons-cons" src="/Media/Brands/Converse/converse-logo.svg" alt="converse-logo" id="cons">
+                </a>
+            </div>
+
+            <div class="storeBrands__icons-container">
+                <a href="nike.html">
+                    <img src="/Media/Brands/NIke/nike-logo.svg" alt="nike-logo">
+                </a>
+            </div>
+
+            <div class="storeBrands__icons-container">
+                <a href="timberland.html">
+                <img src="/Media/Brands/Timberland/timber-logo.svg" alt="timberland" id="timber">
+                </a>
+            </div>
+
+            <div class="storeBrands__icons-container">
+                <a href="vans.html">
+                <img src="/Media/Brands/Vans/vans-logo.svg" alt="vans-logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming">
+        <h2 class="upcoming__title">
+            Esperalos
+        </h2>
+
+        <div class="upcoming__items">
+            <div>
+                <img src="/Media/HomeScreen/Banners/Limited-cons.avif" alt="Cons Peanuts">
+            </div>
+
+            <div>
+                <img src="/Media/HomeScreen/Banners/Limited-vans.avif" alt="Cons Peanuts">                    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="popular">
+        <h2 class="popular__title">
+            Lo mas visto
+        </h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">                
+                <div class="carousel-item">
+                <a href="nike.html">
+                <img src="/Media/HomeScreen/Banners/popular-nike.avif" class="d-block w-100" alt="popular-nike">
+                </a>
+                </div>
+                <div class="carousel-item active">
+                <a href="timberland.html">
+                <img src="/Media/HomeScreen/Banners/popular-timber.avif" class="d-block w-100" alt="Timberland boots">
+                </a>
+                </div>
+                <div class="carousel-item">
+                <a href="adidas.html">
+                <img src="/Media/HomeScreen/Banners/popular-adidas.avif" class="d-block w-100" alt="popular-adidas">
+                </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="cart" id="carrito">
+        <h2 class="cart__title">CARRITO</h2> 
+        <h3 class="cart__emptyMessage">No hay productos en tu carrito</h3>        
+        <div class="cart__checkout-container">
+            <button class="cart__checkoutBtn">COMPRAR</button>
+        </div>       
+    </section>
+
+
+
+
+    <footer class="site-footer">
+        <div class="site-footer__container">        
+            <div class="site-footer__media">
+                <h2 class="site-footer__media-title">
+                    Nuestras Redes
+                </h2>
+                <div class="site-footer__media-images">
+                   <a href="https://www.facebook.com"> <img src="/Media/HomeScreen/Icons/Footer/facebook.svg" alt="facebook-icon"> </a>
+                   <a href="https://www.instagram.com"> <img src="/Media/HomeScreen/Icons/Footer/instagram.svg" alt="Ig-icon"> </a>
+                   <a href="https://www.tiktok.com"><img src="/Media/HomeScreen/Icons/Footer/tiktok.svg" alt="TikTok-icon"> </a>
+                   <a href="https://x.com/"><img src="/Media/HomeScreen/Icons/Footer/twitter.svg" alt="Twitter/X-icon"> </a>
+
+
+                </div>
+
+            </div>
+            <div class="site-footer__aboutUs">
+                <h2>
+                    Sobre Nosotros
+                </h2> 
+                <a href="Privacy.html">
+                    Aviso de privacidad
+                </a> 
+                <a href="Privacy.html">
+                    Politicas de Devolucion
+                </a>               
+            </div>
+            <div class="site-footer__contact">
+                <h2>
+                    Contactanos
+                </h2>
+                <p>
+                    Telefono: 222-***-**12
+                </p>
+                <p>
+                    Correo: direccion@correo.com
+                </p>                
+            </div>
+            <div class="site-footer__payments">
+                <img class="site-footer__payments-img" src="/Media/HomeScreen/Icons/Footer/payments.svg" alt="Pagos Aceptados">
+                
+            </div>
+        </div>
+       <div class="site-footer__privacy">
+                <p>
+                   Pagina de tennis. *Todos los derechos reservados
+                </p>                
+            </div>        
+    </footer>
+</body>
+</html>
