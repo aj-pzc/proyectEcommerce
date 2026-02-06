@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/events.js" defer></script> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+
+    <title>Tienda Adidas</title>
+</head>
+
+<body>
+    <header class="site-header">    
+        <div class="site-header__container">
+            <section class="site-header__menu">           
+                <button class="site-header__menu-button"><img src="/Media/HomeScreen/Icons/Header/menu.svg" alt="Menu"></button>
+
+                <div class="menu" aria-hidden="true">
+                    <button class="menu__close" aria-label="Cerrar menú">✕</button>
+                    <nav class="menu__nav">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#" class="menu__nav-cart">Mi Carrito</a></li>
+                            <li>                             
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Tiendas
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul><a href="adidas.html">Adidas</a></ul>
+                                            <ul><a href="converse.html">Converse</a></ul>
+                                            <ul><a href="nike.html">Nike</a></ul>
+                                            <ul><a href="timberland.html">Timberland</a></ul>
+                                            <ul><a href="vans.html">Vans</a></ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>          
+
+            <section class="site-header__logo">
+                <a  class="site-header__logo-icon" href="index.html">
+                    <img class="site-header__logo-img" src="/Media/Brands/Adidas/adidas-inverted-logo.svg" alt="Logo">
+                </a>
+            </section>
+            
+            <section class="site-header__cart">
+                <button class="site-header__cart-button">
+                    <span class="site-header__cart-badge">10</span> 
+                    <img src="/Media/HomeScreen/Icons/Header/cart.svg" alt="Carrito">                
+                </button>            
+            </section>
+            
+        </div>       
+    </header>
+
+    <section class="banner" id="adidasBanner">
+    </section>
+
+    <section class="products">
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/og-handball-spezial.avif" alt="Handball-spezial">
+            <h3 class="products__title">Handball Spezial</h3>
+            <p class="products__collection">Originals</p>
+            <p class="products__price">$2,299.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+  
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/og-samba.avif" alt="Samba-og">
+            <h3 class="products__title">Samba OG</h3>
+            <p class="products__collection">Originals</p>
+            <p class="products__price">$2,399.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+   
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/og-superstar-blk.avif" alt="Superstar-Blk">
+            <h3 class="products__title">Superstar BLK</h3>
+            <p class="products__collection">Originals</p>
+            <p class="products__price">$2,399.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/running-adizero-evo-sl.avif" alt="Evo-Koumori">
+            <h3 class="products__title">Adizero EVO H.Koumori</h3>
+            <p class="products__collection">Running</p>
+            <p class="products__price">$3,599.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/running-duramo-sl-2.avif" alt="Duramo-SL-2">
+            <h3 class="products__title">Duramo SL 2</h3>
+            <p class="products__collection">Running</p>
+            <p class="products__price">$1,699.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/running-supernova-glide.avif" alt="supernova-glide">
+            <h3 class="products__title">Supernova Glide</h3>
+            <p class="products__collection">Running</p>
+            <p class="products__price">$2,999.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+   
+       <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/training-amplimove.avif" alt="Amplimove">
+            <h3 class="products__title">Amplimove</h3>
+            <p class="products__collection">Training</p>
+            <p class="products__price">$2,299.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+   
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/training-dropset.avif" alt="Dropset-3">
+            <h3 class="products__title">Dropset 3</h3>
+            <p class="products__collection">Training</p>
+            <p class="products__price">$2,999.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+   
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/Training-rapidmove-go-m.avif" alt="rapidmove-GO">
+            <h3 class="products__title">RAPIDMOVE GO</h3>
+            <p class="products__collection">Training</p>
+            <p class="products__price">$1,599.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+   
+       <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/sportswear-climacool.avif" alt="Climacool">
+            <h3 class="products__title">ClimaCool </h3>
+            <p class="products__collection">Sportswear</p>
+            <p class="products__price">$3,599.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/sportswear-grand-court-lo.avif" alt="G-court-lo">
+            <h3 class="products__title">Grand Court Lo</h3>
+            <p class="products__collection">Sportswear</p>
+            <p class="products__price">$1,499.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+   
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/sportswear-break-start.avif" alt="Break-Start">
+            <h3 class="products__title">Break Start</h3>
+            <p class="products__collection">Sportswear</p>
+            <p class="products__price">$1,299.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/crazyquick-padel.avif" alt="Crazyquick">
+            <h3 class="products__title">Crazyquick</h3>
+            <p class="products__collection">Padel</p>
+            <p class="products__price">$2,499.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+
+       <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/crazyquick-lightstrike-padel.avif" alt="Lightstrike">
+            <h3 class="products__title">Lightstrike</h3>
+            <p class="products__collection">Padel</p>
+            <p class="products__price">$2,499.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+
+        <article class="products__item">
+            <img class="products__img" src="/Media/Brands/Adidas/Products/crazyquick-BOOSTpadel.avif" alt="Boost">
+            <h3 class="products__title">BOOST</h3>
+            <p class="products__collection">Padel</p>
+            <p class="products__price">$2,999.00</p>            
+            <button class="products__add-to-cart">Agregar al Carrito</button>
+        </article>
+    </section>
+
+    <section class="cart" id="carrito">
+        <h2 class="cart__title">CARRITO</h2> 
+        <h3 class="cart__emptyMessage">No hay productos en tu carrito</h3> 
+
+        <div class="cart__checkout-container">                   
+        <button class="cart__checkoutBtn">COMPRAR</button> 
+        </div>      
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer__container">        
+            <div class="site-footer__media">
+                <h2 class="site-footer__media-title">
+                    Nuestras Redes
+                </h2>
+                <div class="site-footer__media-images">
+                   <a href="https://www.facebook.com"> <img src="/Media/HomeScreen/Icons/Footer/facebook.svg" alt="facebook-icon"> </a>
+                   <a href="https://www.instagram.com"> <img src="/Media/HomeScreen/Icons/Footer/instagram.svg" alt="Ig-icon"> </a>
+                   <a href="https://www.tiktok.com"><img src="/Media/HomeScreen/Icons/Footer/tiktok.svg" alt="TikTok-icon"> </a>
+                   <a href="https://x.com/"><img src="/Media/HomeScreen/Icons/Footer/twitter.svg" alt="Twitter/X-icon"> </a>
+
+
+                </div>
+
+            </div>
+            <div class="site-footer__aboutUs">
+                <h2>
+                    Sobre Nosotros
+                </h2> 
+                <a href="Privacy.html">
+                    Aviso de privacidad
+                </a> 
+                <a href="Privacy.html">
+                    Politicas de Devolucion
+                </a>               
+            </div>
+            <div class="site-footer__contact">
+                <h2>
+                    Contactanos
+                </h2>
+                <p>
+                    Telefono: 222-***-**12
+                </p>
+                <p>
+                    Correo: direccion@correo.com
+                </p>                
+            </div>
+            <div class="site-footer__payments">
+                <img class="site-footer__payments-img" src="/Media/HomeScreen/Icons/Footer/payments.svg" alt="Pagos Aceptados">
+                
+            </div>
+        </div>
+       <div class="site-footer__privacy">
+                <p>
+                   Pagina de tennis. *Todos los derechos reservados
+                </p>                
+            </div>        
+    </footer>
+</body>
+</html>
