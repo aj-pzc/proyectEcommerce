@@ -188,32 +188,32 @@ body {
   }
 }
 #homeBanner {
-  background-image: linear-gradient(rgba(29, 28, 28, 0.8078431373), rgba(48, 47, 47, 0.8)), url(/Media/HomeScreen/Banners/homebanner.avif);
+  background-image: linear-gradient(rgba(29, 28, 28, 0.8078431373), rgba(48, 47, 47, 0.8)), url(../Media/HomeScreen/Banners/homebanner.avif);
   background-position: top;
 }
 
 #adidasBanner {
-  background-image: linear-gradient(rgba(29, 28, 28, 0.2549019608), rgba(48, 47, 47, 0.1215686275)), url(/Media/HomeScreen/Banners/store-adidas-banner.avif);
+  background-image: linear-gradient(rgba(29, 28, 28, 0.2549019608), rgba(48, 47, 47, 0.1215686275)), url(../Media/HomeScreen/Banners/store-adidas-banner.avif);
   background-position: center;
 }
 
 #nikeBanner {
-  background-image: linear-gradient(rgba(29, 28, 28, 0.4235294118), rgba(48, 47, 47, 0.6862745098)), url(/Media/HomeScreen/Banners/store-nike-banner.avif);
+  background-image: linear-gradient(rgba(29, 28, 28, 0.4235294118), rgba(48, 47, 47, 0.6862745098)), url(../Media/HomeScreen/Banners/store-nike-banner.avif);
   background-position: bottom;
 }
 
 #consBanner {
-  background-image: linear-gradient(rgba(29, 28, 28, 0.2549019608), rgba(48, 47, 47, 0.1215686275)), url(/Media/HomeScreen/Banners/store-cons-banner.avif);
+  background-image: linear-gradient(rgba(29, 28, 28, 0.2549019608), rgba(48, 47, 47, 0.1215686275)), url(../Media/HomeScreen/Banners/store-cons-banner.avif);
   background-position: center;
 }
 
 #timberBanner {
-  background-image: linear-gradient(rgba(29, 28, 28, 0.4235294118), rgba(48, 47, 47, 0.6862745098)), url(/Media/HomeScreen/Banners/store-timber-banner.avif);
+  background-image: linear-gradient(rgba(29, 28, 28, 0.4235294118), rgba(48, 47, 47, 0.6862745098)), url(../Media/HomeScreen/Banners/store-timber-banner.avif);
   background-position: bottom;
 }
 
 #vansBanner {
-  background-image: url(/Media/HomeScreen/Banners/store-vans-banner.avif);
+  background-image: url(../Media/HomeScreen/Banners/store-vans-banner.avif);
   background-position: bottom;
 }
 
