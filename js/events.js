@@ -1,4 +1,8 @@
 
+// Detectar si estamos en la raíz o dentro de HTML
+const isInHtmlFolder = window.location.pathname.includes('/HTML/');
+const basePath = isInHtmlFolder ? '../' : './';
+
 const badge = document.querySelector('.site-header__cart-badge');
 const checkoutBtn = document.querySelector('.cart__checkoutBtn');
 const checkoutContainer = document.querySelector('.cart__checkout-container');
@@ -57,7 +61,7 @@ addToCart.forEach(btn => {
             <img class="cart__item-img" src="${productImg}" alt="${productName}">
             <p class="cart__item-title">${productName}</p>
             <p class="cart__item-price">${productPrice}</p>
-            <i class="cart__item-remove"><img src="../Media/HomeScreen/Icons/Header/trash.svg" alt="Icono Quitar" class="delete-icon"/></i>
+            <i class="cart__item-remove"><img src="${basePath}Media/HomeScreen/Icons/Header/trash.svg" alt="Icono Quitar" class="delete-icon"/></i>
         `;
 
         if (checkoutContainer) {
