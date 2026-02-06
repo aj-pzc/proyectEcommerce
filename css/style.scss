@@ -648,6 +648,10 @@ body {
     width: 400px;
     top: 80px;
     height: calc(100% - 100px);
+    body { 
+      font-size: 12px; 
+      overflow-wrap: break-word
+    }
   }
 
   @media (max-width: 480px) {
@@ -662,7 +666,8 @@ body {
       height: 40px; 
     }
     body { 
-      font-size: 14px; 
+      font-size: 12px; 
+      overflow-wrap: break-word
     }
 }
 

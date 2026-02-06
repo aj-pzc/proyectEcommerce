@@ -606,6 +606,10 @@ body {
     top: 80px;
     height: calc(100% - 100px);
   }
+  .cart body {
+    font-size: 12px;
+    overflow-wrap: break-word;
+  }
 }
 @media (max-width: 480px) {
   .cart .menu {
@@ -619,7 +623,8 @@ body {
     height: 40px;
   }
   .cart body {
-    font-size: 14px;
+    font-size: 12px;
+    overflow-wrap: break-word;
   }
 }
 @media (max-width: 480px) {
