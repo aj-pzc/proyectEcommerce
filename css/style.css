@@ -1,4 +1,4 @@
-.cart__title, .banner__title {
+.cart__title, .termsAndReturns h2, .banner__title {
   font-weight: 600;
   text-align: center;
 }
@@ -465,6 +465,34 @@ body {
   }
   .products__title, .products__price {
     padding: 0 8px;
+  }
+}
+
+.termsAndReturns {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.termsAndReturns h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.termsAndReturns p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #999;
+  font-weight: 300;
+}
+@media (max-width: 480px) {
+  .termsAndReturns {
+    padding: 15px;
+  }
+  .termsAndReturns h2 {
+    font-size: 24px;
+  }
+  .termsAndReturns p {
+    font-size: 14px;
   }
 }
 

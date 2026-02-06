@@ -494,6 +494,34 @@ body {
   }
 }
 
+.termsAndReturns {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h2 {
+    @extend %title-style;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: $text-color;
+    font-weight: 300;
+  }
+
+  
+  @media (max-width: 480px) {
+    padding: 15px;
+
+    h2 { font-size: 24px; }
+    p { font-size: 14px; }
+}
+}
+
 
 .cart {
   width: 500px;
